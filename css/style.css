@@ -1,0 +1,196 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body{
+    font-family: Arial, Helvetica, Helvetica Neue, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    margin: auto;
+    
+}
+
+form{
+    max-width: 25rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #F5F5F5;
+    padding: 1em;
+    border: 1px solid #DDD; 
+    position: relative;
+    margin-top: 10rem;
+    height: 30rem;
+
+}
+
+
+
+
+.legend{
+    
+    color: black;
+    background-color: white;
+    padding: 1em;
+    font-size: 2rem;
+    position: absolute;
+    bottom: 28rem;
+    display: block;
+    border: 1px solid #DDD; 
+
+}
+
+label{
+    margin-bottom: 1rem;
+}
+
+
+
+
+.nm{
+    margin-top: 2rem;
+}
+
+#name, #email {
+    background-color: white;
+    color: #DDD;
+    font-family: Arial, Helvetica, Helvetica Neue, sans-serif;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 3px;
+    border: 1px solid #DDD; 
+}
+
+.label1, .label2, .label3{
+    display: flex;
+    flex-direction: column;
+}
+
+
+#message {
+    color: #DDD;
+    font-family: Arial, Helvetica, Helvetica Neue, sans-serif;
+    border: none;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 3px;
+    border: 1px solid #DDD; 
+
+}
+
+
+
+#blue-button{
+    color: white;
+    background-color: #6495ED;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 3px;
+    border: none;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+
+
+/* TABLET VIEW  */
+@media (min-width: 35rem) {
+
+    form{
+        display: grid;
+        grid-template-areas: "a b"
+                            "c c";
+        max-width: 40rem;
+
+            
+        width: 100%;
+
+            
+
+        margin-top: 10rem;
+        height: 25rem;
+        grid-gap: 30px;
+
+    }
+
+
+    #blue-button{
+       
+        width: 75%;
+      
+    }
+
+
+
+
+    .nm{
+        margin-top: 0;
+    }
+
+    #name, #email {
+        
+        padding: 0.5rem;
+        margin-bottom:0;
+    }
+
+    #message{
+        margin-bottom: 0;
+    }
+ 
+
+
+
+    .legend{
+    
+       
+    
+       
+     
+        bottom: 23rem;
+        left: 1rem;
+       
+    }
+
+
+
+
+    .label1 {
+
+        grid-area: a;
+        margin-top: 2rem;
+    }
+
+    .label2 {
+        grid-area: b;
+        margin-top: 2rem;
+    }
+
+    .label3 {
+        grid-area: c;
+    }
+
+    /* closing */
+}
+
+/* DESKTOP VIEW  */
+
+
+
+@media (min-width: 50rem) {
+
+    form{
+        grid-gap: 30px;
+        max-width: 50rem;
+    }
+
+    /* CLOSING */
+}
+
